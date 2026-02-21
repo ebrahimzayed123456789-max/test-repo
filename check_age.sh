@@ -1,17 +1,15 @@
 #!/bin/bash
 
-# 1. Create Required_Age variable
+
 Required_Age=27
+read -p "Enter your username: " NAME
 
-# 2. Prompt for username
-echo "Enter your username:"
-read NAME
 
-# 3. Prompt for age
-echo "Enter your age:"
-read AGE
+read -p "Enter your age: " AGE
 
-# Display entered data
-echo "Username: $NAME"
-echo "Age: $AGE"
-echo "Required Age is: $Required_Age"
+
+if [ "$AGE" -ge "$Required_Age" ]; then
+    echo "Welcome $NAME, you are allowed"
+else
+    echo "Sorry $NAME, you are not allowed"
+fi
