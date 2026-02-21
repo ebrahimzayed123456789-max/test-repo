@@ -1,0 +1,11 @@
+#!/bin/bash
+
+
+Required_Age=27
+read -p "Enter your username: " NAME
+
+
+read -p "Enter your age: " AGE
+
+
+
